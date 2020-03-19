@@ -1,0 +1,171 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.main-header{
+    background-color: #008000;
+    height: 70px;
+    padding: 10px;
+}
+.logo img{
+    height: 30px;
+    width: 50px;
+    float: left;
+}
+.barra{
+    background-color: whitesmoke; 
+    justify-content: flex-end;
+    display: flex;
+    height: 100%;
+}
+.barra button{
+    margin: 0.5%;
+    background-color: whitesmoke;
+    border: none;
+}
+.barra input{
+    margin: 0.5%;
+    background-color: whitesmoke;
+}
+
+.menu{
+    position: relative;
+    top: 22%;
+    float: right;
+}
+.menu a{
+    text-decoration: none;
+    color: black;
+}
+.pagina-actual{
+    background-color: rgb(226, 216, 216);
+    padding: 20px 10px;
+}
+.main-header nav ul li{
+    position: relative;
+    float: left;
+    list-style-type: none;
+    padding: 5px;
+}
+
+main{
+    margin: unset;
+    height: 1150px;
+}
+.titulos{
+    height: 200px;
+    background-image: url("../images/mix4.jpg");
+    text-align: center;
+}
+.encabezado{
+    position: relative;
+    top: 40%;
+    color: black;
+    font-size: 30px;
+}
+
+
+.photo-container{
+    position: relative;
+
+}
+.photo{
+    display: block;
+    width: 100%;
+    padding: 10px;
+    border-radius: 10%;
+}
+.special{
+    position: absolute;
+    top: 0px;
+    right: 20px;
+}
+
+.producto{
+    margin-top: 20px;
+}
+.producto h2{
+    margin: 10px 0;
+    text-align: center;
+    text-decoration: none;
+}
+.producto p{
+    color: grey;
+    text-align: center;
+    font-weight: bold;
+}
+
+
+footer{
+    background-color: grey;
+    height: 305px;
+    padding: 20px;
+}
+img.mapa{
+    float: left;
+    width: 400px;
+    height: 270px;
+}
+.texto-dire{
+    display: block;
+    float: left;
+    width: 80px;
+    color: white;
+    padding-left: 10px;
+    
+}
+.contacto{
+    float: right;
+    color: white;
+}
+.contacto ul li{
+    list-style-type: none;
+    padding-bottom: 10px;
+    padding-right: 30px;
+    text-align: center;
+}
+.contacto a{
+    text-decoration: none;
+    color: white;
+
+}
+@media (min-width: 450px){
+        
+    .via-products{
+        overflow: hidden;
+    }
+    .producto{
+        float: left;
+        width: 47%;
+        margin-right: 6%;
+        background-color: inherit;
+    }
+    .producto:nth-child(even){
+        margin-right: 0;
+    }
+    }
+    
+    
+    @media (min-width: 768px){
+        .container{
+            max-width: 1180px;
+            margin: 20px auto;
+        }
+        .producto:nth-child(even){
+            margin-right: 2%;
+        }
+    
+        .producto{
+            float: left;
+            width: 32%;
+            margin-right: 2%;
+            background-color: inherit;
+        }
+        .producto:nth-child(3n){
+            margin-right: 0;
+        }
+        
+    }
+    

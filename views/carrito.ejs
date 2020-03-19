@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+    <%- include('partials/head.ejs') %>
+    </head>
+    <body>
+        <%- include('partials/header.ejs') %>
+ 
+        
+        <main>
+            <div class="titulos">
+                    <h3 class="encabezado">Carrito de Compra</h3>                    
+            </div>
+            <div class="compras">
+                <section class="vip-products">
+                    <div class="producto">
+                    <article >
+                        <div class="photo-container">
+                            <a href="#"><img class="photo" src="/images/tomates.jpg"></a>
+                        </div>
+                        <div class="descripcion">
+                            <ul>
+                                <li>Tomate</li>
+                                <li>Precio Unitario $10</li>
+                                <li>Cantidad</li>
+                                <li><form action="" method="POST">
+                                    <input type="number" name="cant">
+                                </form></li>
+                            </ul>
+                        </div>
+                    </article>
+                    </div>
+                    <div class="producto">
+                    <article >
+                        <div class="photo-container">
+                            <a href="#"><img class="photo" src="../images/zanahoria.jpg"></a>
+                        </div>
+                        <div class="descripcion">
+                                <ul>
+                                    <li>Zanahoria</li>
+                                    <li>Precio Unitario $10</li>
+                                    <li>Cantidad
+                                    <form action="" method="POST">
+                                        <input type="number" name="cant">
+                                    </form></li>
+                                </ul>
+                        </div>
+                    </article>
+                    </div>
+                </section>
+            </div>
+            <div class="totales"> 
+                <section>
+                    <article>
+                        <p class="total-final">TOTAL: $20</p>
+                        <P class="pedido">EL PEDIDO SE RETIRA SOLAMENTE LOS DIAS MARTES DE 10 A 17HS.</P>
+                    </article>
+                    <article>
+                        <p>Fecha de Retiro:</p>
+                        <form class="calendario" action="" method="post">
+                            <input type="date" name="dia">
+                        </form>
+                        <button class="boton-comprar" type="button">COMPRAR</button>
+                    </article>
+                </section>
+            </div>
+
+        </main>
+        <hr>
+        <%- include('partials/footer.ejs') %>
+        <%- include('partials/scripts.ejs') %>
+        
+    </body>
+</html>
